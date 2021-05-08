@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    height: 100vh;
+    width: 100%;
+    font-family: 'roboto';
+    background: #b5c5db;
+}
+
+.navbar {
+    display: flex;
+    padding: 10px 0;
+    justify-content: space-around;
+    width: 100%;
+    height: 45px;
+}
+
+.navbar i{
+    font-size: 1.2rem;
+    color: #dadfe5;
+}
+
+.navbar i:nth-child(2){
+    color: #fe466d;
+}
+
+.photo-action{
+    height: calc(100vh - 45px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.photo{
+    width: 90vw;
+    height: 85vh;
+    background: url(../img/Yumeko_Jabami.jpg);
+    background-size: cover;
+    border-radius: 10px;
+    display: flex;
+    align-items: flex-end;
+    color: #eee;
+    box-shadow: 0 2px 10px 0 rgba(136, 136, 136, .77);
+}
+
+.photo-text{
+    padding: 15px;
+    background: rgb(2, 0, 36);
+    background: rgb(2, 0, 36);
+    background: linear-gradient(180deg, rgba(2, 0, 36, 1) 0%, rgba(35, 34, 65, 0) 0%, rgba(0, 0, 0, .7) 50%);
+    width: 100%;
+    border-radius: 10px;
+}
+
+.name-age{
+    display: flex;
+    align-items: center;
+    margin-bottom: 5px;
+}
+
+.name-age h2{
+    font-size: 1.8rem;
+    font-weight: 500;
+}
+
+.name-age h2:nth-child(2){
+    margin-left: 10px;
+    font-weight: 400;
+}
+
+.bio{
+    line-height: 1.5rem;
+    font-weight: 500;
+    font: 1rem;
+}
+
+.actions{
+    display: flex;
+    flex: auto;
+    align-items: center;
+    margin: 1rem 0;
+}
+
+.action{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #fff;
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    font-size: 2rem;
+    box-shadow: 0 2px 6px 0 rgba(112, 125, 135, .15);
+}
+
+.actions .action:nth-child(1){
+    color: rgb(255, 0, 149);
+}
+
+.actions .action:nth-child(2){
+    color: rgb(66, 144, 247);
+    height: 48px;
+    width: 48px;
+    font: 1.5rem;
+    margin: 0 1rem;
+}
+
+.actions .action:nth-child(3){
+    color: rgb(73, 216, 173);
+}
+
+@media (min-width: 1030px){
+    .photo{
+        width: 367px;
+        height: 684px;
+    }
+
+    .actions{
+        flex: initial;
+    }
+
+    .photo-actions{
+        justify-content: center;
+    }
+
+    .navbar{
+        width: 400px;
+        margin: auto;
+    }
+}
